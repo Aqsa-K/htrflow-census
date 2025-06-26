@@ -4,6 +4,10 @@ steps:
     model: yolo
     model_settings:
       model: Riksarkivet/yolov9-lines-within-regions-1
+- step: Export
+  settings:
+    format: json
+    dest: outputs
 - step: TextRecognition
   settings:
     model: TrOCR
